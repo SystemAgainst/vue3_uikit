@@ -32,7 +32,7 @@ const props = defineProps({
 
 const emit = defineEmits(['click']);
 
-const clickOnButton = () => {
+const handleClickOnButton = () => {
   emit('click');
 };
 </script>
@@ -41,7 +41,7 @@ const clickOnButton = () => {
   <button
       :class="['btn', `btn_${color}`, {'btn_rounded': rounded}, {'btn_outlined': outlined}, {'btn_icon': icon}, {'btn_large': size === 'large'}]"
       :disabled="disabled"
-      @click="clickOnButton">
+      @click="handleClickOnButton()">
       <span v-if="icon">
         <font-awesome-icon :icon="`fa-regular fa-${icon}`" />
       </span>

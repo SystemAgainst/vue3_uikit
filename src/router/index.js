@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "@/views/index.vue";
-import ViewButton from "@/views/ViewButton.vue";
-import ViewTypography from "@/views/ViewTypography.vue";
+import ViewButton from "@/views/ButtonView.vue";
+import ViewTypography from "@/views/TypographyView.vue";
 
 
 const router = createRouter({
